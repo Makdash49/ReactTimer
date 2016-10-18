@@ -24,10 +24,7 @@ describe('Countdown', () => {
         done();
       }, 1001);
     });
-  });
-
-  describe('startTimer', () => {
-    it('should never let count go below 0', (done) => {
+    it('should never let count less than zero', (done) => {
       var countdown = TestUtils.renderIntoDocument(<Countdown/>);
       countdown.handleSetCountdown(1);
 
