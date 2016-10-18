@@ -14,10 +14,10 @@ module.exports = function (config) {
       mocha: {
         timeout: '5000'
       },
-      webpack: webpackConfig,
-      webpackServer: {
-        noInfo: true
-      }
+    },
+    webpack: webpackConfig,
+    webpackServer: {
+      noInfo: true
     }
   });
 };
